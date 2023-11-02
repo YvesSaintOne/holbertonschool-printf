@@ -7,16 +7,16 @@
  *
  * Return: 0 on success, error code otherwise
  */
-int main(void)
+int _printf(const char *format, ...)
 {
 	int len, len2;
 
-	len = dprintf("starting printf.\n");
-	len2 = printf("lets start.\n");
+	len = dprintf(char *Let's print a simple sentence);
+	len2 = printf(char *lets start);
 	fflush(stdout);
 	if (len != len2)
 	{
-		printf("Lengths differ.\n");
+		printf(char *Lengths differ);
 		fflush(stdout);
 		return (1);
 	}
