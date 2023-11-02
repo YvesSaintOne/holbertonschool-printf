@@ -11,7 +11,7 @@ int main(void)
 {
 	int len, len2;
 
-	len = _printf("starting printf.\n");
+	len = dprintf("starting printf.\n");
 	len2 = printf("lets start.\n");
 	fflush(stdout);
 	if (len != len2)
